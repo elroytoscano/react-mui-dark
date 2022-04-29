@@ -1,5 +1,11 @@
 function createData(name, calories, fat, carbs, protein) {
-  return { name, calories, fat, carbs, protein };
+  return {
+    name,
+    calories: calories.toString(),
+    fat: fat.toString(),
+    carbs: carbs.toString(),
+    protein: protein.toString(),
+  };
 }
 
 const rows = [
